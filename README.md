@@ -15,11 +15,11 @@ EOF
 docker build grype -t grype
 docker pull nginx
 docker run --rm -v /var/run/docker.sock:/var/run/docker.sock grype nginx
-
+```
 -----------------
 syft (Software Bill of Materials - list of packages and 3rd party libraries install on container)
 -----------------
-```
+
 mkdir syft
 
 cat <<EOF > syft/Dockerfile
